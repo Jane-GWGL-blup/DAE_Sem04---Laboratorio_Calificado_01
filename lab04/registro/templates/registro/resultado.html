@@ -1,0 +1,19 @@
+
+<h1> Candidatos de la región {{ region.name_region }}</h1>
+
+<ul>
+    {% for candidato in region.candidato_set.all %}
+        <li>
+            <a href="/registro/detalles/{{ candidato.id }}/">{{ candidato.nombres }}</a>
+        </li>
+        
+    {% endfor %}
+    </ul>
+
+<a href="{% url 'registro:index' %}">Volver a la pagina principal</a>
+
+
+
+
+
+

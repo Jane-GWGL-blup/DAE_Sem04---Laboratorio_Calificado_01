@@ -1,0 +1,23 @@
+<meta charset="UTF-8"/>
+<h1>Candidato - {{ candidato.nombres }}</h1>
+
+<table>
+    <thead>
+        <tr>
+            <td>Apellidos</td>
+            <td>Candidatura</td>
+            <td>Ideología</td>
+            <td>Edad</td>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>{{ candidato.apellidos}}</td>
+            <td>{{ candidato.candidatura}}</td>
+            <td>{{ candidato.ideologia}}</td>
+            <td>{{ candidato.edad }}</td>
+        </tr>
+    </tbody>
+</table>
+
+<a href="{% url 'registro:index' %}">Volver a la pagina principal</a>

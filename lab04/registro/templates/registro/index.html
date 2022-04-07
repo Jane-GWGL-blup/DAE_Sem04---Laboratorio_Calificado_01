@@ -1,0 +1,14 @@
+<h1>Encuesta</h1>
+
+{% if region_list %}
+    <ul>
+    {% for region in region_list %}
+        <li>
+            <a href="/registro/{{ region.id }}/">{{ region.name_region }}</a>
+        </li>
+    {% endfor %}
+    </ul>
+{% else %}
+    <p>No hay registros.</p>
+{% endif %}
+
